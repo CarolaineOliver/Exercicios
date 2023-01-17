@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 07</title>
+</head>
+<body>
+    <script>
+        var c = 1
+        var nPar = 0 
+        var nImpar = 0 
+        while (c <=10) {
+            var n = parseInt(prompt(`Digite o ${c}º número:`))
+            if(n % 2 == 0) {
+                var nPar = nPar +1
+            }if(n % 2 == 1 ) {
+                var nImpar = nImpar + 1 
+            }
+            c++
+        }
+        alert(`Foram digitados ${nPar} números pares e ${nImpar} números ímpares.`)
+
+    </script>
+    
+</body>
+</html>

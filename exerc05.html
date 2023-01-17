@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 05</title>
+</head>
+<body>
+    <script>
+        var altura = Number(prompt("Digite seu altura(m):"))
+        var peso = Number(prompt("Digite seu Peso(kg):"))
+        var IMC = peso/altura**2
+
+        if(IMC <18.6){
+            alert(`Seu IMC é ${IMC.toFixed(2)}. Você está ABAIXO do peso.`)
+        } else if((IMC >=18.5) && (IMC < 25)){
+                alert(`Seu IMC é ${IMC.toFixed(2)}. Você está com o PESO NORMAL.`)
+            } else if((IMC >= 25) && (IMC < 30)){
+                    alert(`Seu IMC é ${IMC.toFixed(2)}. Você está com o SOBREPESO.`)
+                }else if((IMC >=30) && (IMC < 35)){
+                    alert(`Seu IMC é ${IMC.toFixed(2)}. Você está com o OBESIDADE GRAU I.`)
+                    } else if((IMC >=35) && (IMC < 40)){
+                        alert(`Seu IMC é ${IMC.toFixed(2)}. Você está com o OBESIDADE GRAU II.`)
+                        } else if(IMC >=40){
+                            alert(`Seu IMC é ${IMC.toFixed(2)}. Você está com o OBESIDADE GRAU III.`)
+                        }
+   
+
+    </script>
+</body>
+</html>

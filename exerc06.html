@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 06</title>
+</head>
+<body>
+    <script>
+        var c = 1
+        var nmaior = 0
+        var nmenor = 0 
+        while (c <=10) {
+            var n = Number(prompt(`Digite o ${c}º número:`))
+            if(n > nmaior) {
+                var nmaior = n
+            }
+            if(n < nmaior) {
+                var nmenor = n
+            }
+            c++
+        }
+        alert(`O maior numero digitado foi ${nmaior} e o menor número foi ${nmenor}`)
+
+    </script>
+</body>
+</html>
