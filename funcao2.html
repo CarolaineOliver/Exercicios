@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcao</title>
+</head>
+<body>
+    <h1>Conversão de Real para Euro</h1>
+    Digite o valor em real (R$) :<input type="number" id="real" >
+    <button onclick="conversao()">Converter</button>
+    <div id="res"></div>
+    <script>
+        var real = 0 
+        function conversao(){
+            real = document.getElementById('real').value
+            var euro = real / 5.5   
+            document.getElementById("res").innerHTML= `O valor informado em euro é: ${euro.toFixed(2)}`
+        }
+    </script>
+    
+</body>
+</html>
